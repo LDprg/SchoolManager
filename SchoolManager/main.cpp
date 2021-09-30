@@ -5,6 +5,7 @@
 #include <QQuickItem>
 
 #include "configmanager.h"
+#include "hourmanager.h"
 #include "filemanager.h"
 
 QQmlApplicationEngine* appEngine;
@@ -29,6 +30,7 @@ int main(int argc, char *argv[])
     appEngine = &engine;
 
     ConfigManager::instance();
+    HourManager::instance();
     FileManager::instance();
 
     return app.exec();

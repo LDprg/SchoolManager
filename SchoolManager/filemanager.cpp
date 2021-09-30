@@ -49,6 +49,6 @@ void FileManager::create(QString type)
 {
     QDateTime date = QDateTime::currentDateTime();
     QString formattedTime = date.toString(ConfigManager::instance().DateFormat);
-    qDebug() << ConfigManager::instance().WorkingDirectory + formattedTime + QString(".docx");
+    qDebug() << ConfigManager::instance().WorkingDirectory + QString("FSST/") + formattedTime + QString(".docx");
     //QFile::copy(files.filter(type).at(0), ConfigManager::instance().WorkingDirectory + formattedTime + QString(".docx"));
 }

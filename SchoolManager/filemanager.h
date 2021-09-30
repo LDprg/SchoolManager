@@ -15,7 +15,6 @@ class FileManager: public QObject
 {
     Q_OBJECT
     SINGLETON(FileManager);
-
 public slots:
     void create(QString type);
 

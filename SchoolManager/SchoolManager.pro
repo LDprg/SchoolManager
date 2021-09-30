@@ -10,6 +10,7 @@ CONFIG += c++11
 SOURCES += \
         configmanager.cpp \
         filemanager.cpp \
+        hourmanager.cpp \
         main.cpp
 
 RESOURCES += qml.qrc
@@ -28,4 +29,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     Config.h \
     configmanager.h \
-    filemanager.h
+    filemanager.h \
+    hourmanager.h
